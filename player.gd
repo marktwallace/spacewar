@@ -72,6 +72,7 @@ func start(pos):
 	print("Player" + player_type +" started")
 	position = pos
 	show()
+	await get_tree().create_timer(1.0).timeout
 	$CollisionShape2D.disabled = false
 
 
